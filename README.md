@@ -7,4 +7,10 @@ For various legal and liability reasons, I cannot open-source it at this time, b
 
 If there's sufficient interest, I'll look into the logistics of open-sourcing it.  For now, though, it remains (c) 1992 Silicon Prairie Software.
 
+Authorship:  Primarily Dave Plummer, though it was initially kindled by a sample that I found which showed how to hook the disk driver, and that code likely remains.  Also, I ultimately hired someone to work on V2.0 once I got to Microsoft, as I was pretty busy, but now I don't have a name!  So some of the code was written by someone else on contract, but I'm still trying to figure out who!
+
+Thanks to Matthew for thinking to ask!
+
+Dave
+
 
