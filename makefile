@@ -1,3 +1,4 @@
+AS=dh2:a68k/a68k
 CFLAGS=-cfist -v -y -O
 STARTUP=lib:cback.o
 LFLAGS=sc sd nd verbose define __main=__tinymain
@@ -6,10 +7,10 @@ MAIN=cache
 OBJECTS=cache.o infoserver.o arg.o backio.o 
 
 cache: $(OBJECTS)
-	BLINK from $(STARTUP) $(OBJECTS) to $(MAIN) $(LFLAGS) $(LIBS)
+	$(LD) from $(STARTUP) $(OBJECTS) to $(MAIN) $(LFLAGS) $(LIBS)
 
 .c.o:	
-	cc $(CFLAGS) $*
+	$(CC) $(CFLAGS) $*
 
 .asm.o:
-	dh2:a68k/a68k $*
+	$(AS) $*
